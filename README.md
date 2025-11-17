@@ -62,8 +62,26 @@ If you want, I can also:
 - Remove an accidental `main` from `loading.cpp` if present.
 - Update the `Makefile` to produce `call.exe` explicitly or add a `run` target.
 
-**Run Output (screenshot)**
 
-- The image below shows the PowerShell commands used to build and run the project in this repository. The spinner output is interactive in the terminal and therefore not represented as static text; this screenshot shows the build and an informational note.
 
-![Terminal run](assets/terminal-screenshot.svg)
+**Spinner frames (plain text)**
+
+- The spinner uses the following Braille frames (plain text):
+
+```
+⠋ ⠙ ⠹ ⠸ ⠼ ⠴ ⠦ ⠧ ⠇ ⠏
+```
+
+- Preview them in PowerShell:
+
+```powershell
+Write-Host "⠋ ⠙ ⠹ ⠸ ⠼ ⠴ ⠦ ⠧ ⠇ ⠏"
+```
+
+- Preview in a Bash-like shell:
+
+```bash
+echo "⠋ ⠙ ⠹ ⠸ ⠼ ⠴ ⠦ ⠧ ⠇ ⠏"
+```
+
+- Note: If characters don't display correctly, set your terminal to UTF-8 (PowerShell: `chcp 65001`) and use a Unicode-capable font (Windows Terminal, Cascadia Code, Consolas, etc.).
